@@ -26,8 +26,7 @@ public class RemembranzaDirectionsApiServiceImpl extends RemembranzaDirectionsAp
 
 	@Override
 	public Response remembranzaDirectionsGet(SecurityContext securityContext) throws NotFoundException {
-	    String directions = "DN,SA,GD,SA,GI,SA,GC,SA,GD,SA,GI,SA,DST";
-		return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, directions)).build();
+		return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "DN,SA,GD,SA,GI,SA,GC,SA,GD,SA,GI,SA,DST")).build();
 	}
 
 }
